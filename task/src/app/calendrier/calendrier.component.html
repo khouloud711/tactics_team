@@ -1,0 +1,24 @@
+<h3>click in the cell to add an event</h3>
+<div class="cal">
+    <full-calendar class="calendar" defaultView="dayGridMonth" 
+                            (eventDeleted)="onEventDelete($event)"
+                            (dayRender)="dayRender($event)"
+                            [header]="{
+                                left:'title',
+                                center:'dayGridMonth, dayGridWeek, dayGridDay',
+                                right:'today,prev,next'
+                            }"
+                            [events]="calendarEvents"
+                            [plugins]="calendarPlugins">
+    </full-calendar>
+    
+    
+
+</div>
+
+<button (click)="sendMeHome()"><strong>Take me back</strong></button>
+
+
+
+
+
